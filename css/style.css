@@ -147,14 +147,12 @@ header{
     /* width: 500px; */
     object-fit: cover;
 }
-.efecct {
-    transition: box-shadow 0.3s;
-  }
-  
-.efecct:hover {
-    box-shadow: 0 25px 50px -12px rgb(0, 0, 0, 0.4);
-  }
-.deliverry {
+
+
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); 
+ 
+ 
+.delivery{
 
    height: auto;
    background-color: #fff;
@@ -181,7 +179,7 @@ header{
     
 }
 .delivery__texto{
-    color: black;
+    color: #BF6D24;
     padding-left: 30px
    
    

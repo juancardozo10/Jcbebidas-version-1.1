@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jc bebidas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Roboto:ital,wght@1,300&display=swap"
@@ -16,20 +18,33 @@
 
 <body>
     <header>
-        <div class="header__content container">
-            <div>
-                <a href="index.html"><img src="./image/LOGO OFICIAL T.png" alt="logo" class="header__logo"></a>
-            </div>
-            <nav>
-                <ul class="header__navbar">
-                    <li><a href=""></a>Inicio</li>
-                    <li><a href=""></a>Productos</li>
-                    <li><a href=""></a>Combos</li>
-                    <li><a href=""></a>Nosotros</li>
-                    <li><a href=""></a>Extras</li>
+        <nav class="navbar navbar-expand-lg bg-dark encabezado navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="./image/LOGO OFICIAL T.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fs-5 fw-bold   ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="./pages/products.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/combos.html">Combos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="./pages/extras.html">Extras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./pages/nosotros.html">Nosotros</a>
+                     </li>  
                 </ul>
-            </nav>
-        </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <main >
         <section class="banner">
@@ -37,90 +52,232 @@
                 <h1 class="banner__tittle">JC BEBIDAS</h1>
                 <p class="banner__description"">Tu negocio de confianza <br> con miles de productos y envío a todo el pais!
                 </p>
-                
-            </div>
-            
-           
+                </div>
+         </section>
+         <section>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded container my-4 carrusel">
+                  <div class="carousel-item active">
+                    <img src="./image/Heineken_carrusel.jpg" class="d-block w-100" alt="heineken promo">
+                  </div>
 
-        </section>
-        <section>
-            <div class="tittleproduct container">
+                  <div class="carousel-item">
+                    <img src="./image/Absolut-Vodka_carrusel_etesi.jpeg" class="d-block w-100" alt="vodka">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="./image/Beefeater_carrusel.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+         </section>
+        <section class="tittleproduct">
+            <div class="tittleproduct__body container">
                 <h2>Productos</h2>
                 <img src="./image/Drink-icon.png" alt="drink-icon">
             </div>
 
         </section>
-        <section class="container">
-            <div class="product ">
-                <article class="product__card">
-                    <div class="card__img">
-                        <img src="./image/Fernet-branca_product.jpg" alt="fernet-branca">
-                    </div>
-                    <p class="card__description">Fernet Branca 750ml. </p>
-                    <a href="" class="card__button">Añadir al carrito</a>
+        <section class="container mt-5">
+            <div class="row gy-5">
+              <div class="col-sm-12 col-md-6 col-lg-4 ">
+                <article class="card efecct">
+                  <img
+                    src="./image/absolut_product.webp"
+                    class="card-img-top"
+                    alt="Imagen de tarjeta"
+                  />
+                  <div class="card-body text-dark text-center">
+                    <h5 class="card-title">Card title</h5>
+                    
+                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                  </div>
                 </article>
-                <article class="product__card">
-                    <div class="card__img">
-                        <img src="./image/jagger_estasi.jpg" alt="Jagerrmaister">
-                    </div>
-                    <p class="card__description">Jägermeister 750ml. </p>
-                    <a href="" class="card__button">Añadir al carrito</a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card efecct">
+                  <img
+                    src="./image/Fernet-branca_product.jpg"
+                    class="card-img-top"
+                    alt="Imagen de tarjeta"
+                  />
+                  <div class="card-body text-dark text-center">
+                    <h5 class="card-title">Card title</h5>
+                    
+                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                  </div>
                 </article>
-                <article class="product__card">
-                    <div class="card__img">
-                        <img src="./image/absolut_product.webp" alt="vodka-absolut">
-                    </div>
-                    <p class="card__description">Absolut Regular 750ml. </p>
-                    <a href="" class="card__button">Añadir al carrito</a>
-                </article> <article class="product__card">
-                    <div class="card__img">
-                        <img src="./image/JACK+DANIELS.png" alt="whisky-jackdaniels">
-                    </div>
-                    <p class="card__description">Jack Daniel´s 750ml. </p>
-                    <a href="" class="card__button">Añadir al carrito</a>
-                </article> <article class="product__card">
-                    <div class="card__img">
-                        <img src="./image/Bombay_product.jpg" alt="gin-bombay">
-                    </div>
-                    <p class="card__description">  Bombay Sapphire 750ml. </p>
-                    <a href="" class="card__button">Añadir al carrito</a>
-                </article> <article class="product__card">
-                    <div class="card__img">
-                        <img src="./image/amarulaestesi.jpg" alt="licor-amarula">
-                    </div>
-                    <p class="card__description">Amarula Cream 750ml. </p>
-                    <a href="" class="card__button">Añadir al carrito</a>
-                </article> <article class="product__card">
-                    <div class="card__img">
-                        <img src="./image/Bacardiestesi.jpg" alt="bacardi-mango">
-                    </div>
-                    <p class="card__description">Bacardi Raspberry 750ml. </p>
-                    <a href="" class="card__button">Añadir al carrito</a>
-                </article> <article class="product__card">
-                    <div class="card__img">
-                        <img src="./image/Jhonywalker_product.jpg" alt="jhony-walker-black">
-                    </div>
-                    <p class="card__description">Jhonny Walker black label 750ml. </p>
-                    <a href="" class="card__button">Añadir al carrito</a>
-                </article> <article class="product__card">
-                    <div class="card__img">
-                        <img src="./image/Baileys_product.jpg" alt="fernet-branca">
-                    </div>
-                    <p class="card__description">Baileys Original 750ml. </p>
-                    <a href="" class="card__button">Añadir al carrito</a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card efecct">
+                  <img
+                    src="./image/Baileys_product.jpg"
+                    class="card-img-top"
+                    alt="Imagen de tarjeta"
+                  />
+                  <div class="card-body text-dark text-center">
+                    <h5 class="card-title">Card title</h5>
+                    
+                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                  </div>
                 </article>
-    
-
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card efecct">
+                  <img
+                    src="./image/jagger_estasi.jpg"
+                    class="card-img-top"
+                    alt="Imagen de tarjeta"
+                  />
+                  <div class="card-body text-dark text-center">
+                    <h5 class="card-title">Card title</h5>
+                   
+                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                  </div>
+                </article>
+              </div>    
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card efecct">
+                  <img
+                    src="./image/Jhonywalker_product.jpg"
+                    class="card-img-top"
+                    alt="Imagen de tarjeta"
+                  />
+                  <div class="card-body text-dark text-center">
+                    <h5 class="card-title">Card title</h5>
+                    
+                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card efecct">
+                  <img
+                    src="./image/Bombay_product.jpg"
+                    class="card-img-top"
+                    alt="Imagen de tarjeta"
+                  />
+                  <div class="card-body text-dark text-center">
+                    <h5 class="card-title">Card title</h5>
+                   
+                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card efecct">
+                  <img
+                    src="./image/JACK+DANIELS.png"
+                    class="card-img-top"
+                    alt="Imagen de tarjeta"
+                  />
+                  <div class="card-body text-dark text-center">
+                    <h5 class="card-title">Card title</h5>
+                    
+                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card efecct">
+                  <img
+                    src="./image/amarulaestesi.jpg"
+                    class="card-img-top"
+                    alt="Imagen de tarjeta"
+                  />
+                  <div class="card-body text-dark text-center">
+                    <h5 class="card-title">Card title</h5>
+                    
+                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                  </div>
+                </article>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card efecct">
+                  <img
+                    src="./image/Bacardiestesi.jpg"
+                    class="card-img-top"
+                    alt="Imagen de tarjeta"
+                  />
+                  <div class="card-body text-dark text-center">
+                    <h5 class="card-title">Card title</h5>
+                   
+                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          <section class="tittleproduct">
+            <div class="tittleproduct__body container">
+                <h2>Extras</h2>
+                <img src="./image/Drink-icon.png" alt="drink-icon">
+            </div>
+         </section>
+         <section class="m-5">
+            <section class="container mt-5">
+                <div class="row gy-5">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                          <img
+                            src="./image/gifpack_stellaestesi.jpg"
+                            class="card-img-top"
+                            alt="Imagen de tarjeta"
+                          />
+                          <div class="card-body text-dark text-center">
+                            <h5 class="card-title">Card title</h5>
+                            
+                            <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                          <img
+                            src="./image/giftpack_bulldogvaso.jpg"
+                            class="card-img-top"
+                            alt="Imagen de tarjeta"
+                          />
+                          <div class="card-body text-dark text-center">
+                            <h5 class="card-title">Card title</h5>
+                            
+                            <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4">
+                        <article class="card">
+                          <img
+                            src="./image/giftpack_coronafrappera.jpg"
+                            class="card-img-top"
+                            alt="Imagen de tarjeta"
+                          />
+                          <div class="card-body text-dark text-center">
+                            <h5 class="card-title">Card title</h5>
+                            
+                            <a href="#" class="btn btn-warning">Añadir al carrito</a>
+                          </div>
+                        </article>
+                      </div>
+         </section>
+        
+       
+        <section class="tittleproduct">
+            <div class="tittleproduct__body container">
+                <h2>Delivery</h2>
+                <img src="./image/Drink-icon.png" alt="drink-icon">
             </div>
 
         </section>
-        <section class="container">
-            <div class="tittleproduct container">
-                <h2>Delivery</h2>
-                <img src="./image/cerveza-icon.png" alt="drink-icon">
-            </div>
-            <section>
-                <div class="delivery container">
+                <div class="deliverry container">
                    
                     <div class="delivery__texto">
                         <h2>Tu proveedor de confianza <br> en todo el pais</h2>
