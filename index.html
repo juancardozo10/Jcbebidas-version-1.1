@@ -8,11 +8,12 @@
     <title>Jc bebidas</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Roboto:ital,wght@1,300&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
      <link rel="icon" type="image/x-icon" href="./image/Logo-blanco.png">   
 </head>
 
@@ -20,14 +21,14 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark encabezado navbar-dark">
             <div class="container">
-              <a class="navbar-brand" href="#"><img src="./image/LOGO OFICIAL T.png" alt=""></a>
+              <a class="navbar-brand" href="./index.html"><img src="./image/LOGO OFICIAL T.png" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto fs-5 fw-bold   ">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                   </li>
                   <li class="nav-item ">
                     <a class="nav-link" href="./pages/products.html">Productos</a>
@@ -47,16 +48,24 @@
           </nav>
     </header>
     <main >
-        <section class="banner">
-            <div class="banner__text">
+        <section>
+            <div class="banner">
+                <div class="banner__text">
+                    <h1 class="banner__text--tittle">JC BEBIDAS</h1>
+                    <p class="banner__text--description">Tu negocio de confianza <br> con miles de productos y envío a todo el pais!</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="banner">
+            <div class="banner__text container">
                 <h1 class="banner__tittle">JC BEBIDAS</h1>
                 <p class="banner__description"">Tu negocio de confianza <br> con miles de productos y envío a todo el pais!
                 </p>
                 </div>
-         </section>
+         </section> -->
          <section>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner rounded container my-4 carrusel">
+                <div class="carousel-inner rounded container my-4 ">
                   <div class="carousel-item active">
                     <img src="./image/Heineken_carrusel.jpg" class="d-block w-100" alt="heineken promo">
                   </div>
@@ -79,6 +88,7 @@
                 </button>
               </div>
          </section>
+         
         <section class="tittleproduct">
             <div class="tittleproduct__body container">
                 <h2>Productos</h2>
@@ -86,10 +96,10 @@
             </div>
 
         </section>
-        <section class="container mt-5">
-            <div class="row gy-5">
+        <section class="container mt-5 p-5 ">
+            <div class="row gy-4 ">
               <div class="col-sm-12 col-md-6 col-lg-4 ">
-                <article class="card efecct">
+                <article class="card efecct effect ">
                   <img
                     src="./image/absolut_product.webp"
                     class="card-img-top"
@@ -103,7 +113,7 @@
                 </article>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-4">
-                <article class="card efecct">
+                <article class="card effect">
                   <img
                     src="./image/Fernet-branca_product.jpg"
                     class="card-img-top"
@@ -117,7 +127,7 @@
                 </article>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-4">
-                <article class="card efecct">
+                <article class="card effect">
                   <img
                     src="./image/Baileys_product.jpg"
                     class="card-img-top"
@@ -131,7 +141,7 @@
                 </article>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-4">
-                <article class="card efecct">
+                <article class="card effect">
                   <img
                     src="./image/jagger_estasi.jpg"
                     class="card-img-top"
@@ -145,7 +155,7 @@
                 </article>
               </div>    
               <div class="col-sm-12 col-md-6 col-lg-4">
-                <article class="card efecct">
+                <article class="card effect">
                   <img
                     src="./image/Jhonywalker_product.jpg"
                     class="card-img-top"
@@ -159,7 +169,7 @@
                 </article>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-4">
-                <article class="card efecct">
+                <article class="card effect">
                   <img
                     src="./image/Bombay_product.jpg"
                     class="card-img-top"
@@ -172,45 +182,7 @@
                   </div>
                 </article>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                <article class="card efecct">
-                  <img
-                    src="./image/JACK+DANIELS.png"
-                    class="card-img-top"
-                    alt="Imagen de tarjeta"
-                  />
-                  <div class="card-body text-dark text-center">
-                    <h5 class="card-title">Card title</h5>
-                    
-                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                <article class="card efecct">
-                  <img
-                    src="./image/amarulaestesi.jpg"
-                    class="card-img-top"
-                    alt="Imagen de tarjeta"
-                  />
-                  <div class="card-body text-dark text-center">
-                    <h5 class="card-title">Card title</h5>
-                    
-                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
-                  </div>
-                </article>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-4">
-                <article class="card efecct">
-                  <img
-                    src="./image/Bacardiestesi.jpg"
-                    class="card-img-top"
-                    alt="Imagen de tarjeta"
-                  />
-                  <div class="card-body text-dark text-center">
-                    <h5 class="card-title">Card title</h5>
-                   
-                    <a href="#" class="btn btn-warning">Añadir al carrito</a>
+             
                   </div>
                 </article>
               </div>
@@ -222,11 +194,12 @@
                 <img src="./image/Drink-icon.png" alt="drink-icon">
             </div>
          </section>
-         <section class="m-5">
-            <section class="container mt-5">
-                <div class="row gy-5">
+         
+        
+            <section class="container mt-5 p-5">
+                <div class="row gy-5 gap-5">
                     <div class="col-sm-12 col-md-6 col-lg-4">
-                        <article class="card">
+                        <article class="card effect">
                           <img
                             src="./image/gifpack_stellaestesi.jpg"
                             class="card-img-top"
@@ -240,7 +213,7 @@
                         </article>
                       </div>
                       <div class="col-sm-12 col-md-6 col-lg-4">
-                        <article class="card">
+                        <article class="card effect">
                           <img
                             src="./image/giftpack_bulldogvaso.jpg"
                             class="card-img-top"
@@ -254,7 +227,7 @@
                         </article>
                       </div>
                       <div class="col-sm-12 col-md-6 col-lg-4">
-                        <article class="card">
+                        <article class="card effect">
                           <img
                             src="./image/giftpack_coronafrappera.jpg"
                             class="card-img-top"
@@ -266,18 +239,35 @@
                             <a href="#" class="btn btn-warning">Añadir al carrito</a>
                           </div>
                         </article>
-                      </div>
-         </section>
-        
-       
-        <section class="tittleproduct">
-            <div class="tittleproduct__body container">
-                <h2>Delivery</h2>
-                <img src="./image/Drink-icon.png" alt="drink-icon">
-            </div>
+                      </section>
+                      <!-- <section class="tittleproduct">
+                        <div class="tittleproduct__body container">
+                            <h2>Productos</h2>
+                            <img src="./image/Drink-icon.png" alt="drink-icon">
+                        </div> -->
+                        
+                        <section>
+                          <div class="delivery container my-5">
+                            <div class="delivery__texto">
+                              <h2 class="delivery__texto-tittle"> Tu proveedor de confianza  en todo el pais</h2>
+                              <p class="delivery__texto-parraf">Contamos con una gran variedad de marcas y clases de alcohol.
+                                Tinto, hay. Whisky? Tenemos. Ese Gin lleno de sabor que probaste en tu bar favorito? También.</p>
+                                <a href="">Traemelo!</a>
+                            </div>
+                            <div class="delivery__img">
+                              <img src="./image/banner_delivery.jpg" alt="Banner-delivery">
+                            </div>
+                          </div>
+                        </section>
 
-        </section>
-                <div class="deliverry container">
+      
+        
+             
+
+            
+         
+
+                <!-- <div class="deliverry container">
                    
                     <div class="delivery__texto">
                         <h2>Tu proveedor de confianza <br> en todo el pais</h2>
@@ -289,9 +279,10 @@
                         <img src="./image/banner_delivery.jpg" alt="jagger_bottle">
                     </div>
 
-                </div>
+                </div> -->
 
-            </section> 
+           
+            
             <section>
                 <div class="whats">
                     <a href=""><img src="./image/Whatsapp circle.webp" alt="" class="whats_logo"></a>
@@ -300,8 +291,9 @@
 
     </main>
     <footer>
-       <div class="footer container">
-        <div class="networks">
+       <div class="footer ">
+        <div class="footer__grid container">
+          <div class="networks">
             <h3 class="networks__tittle">Sigamos Conectados</h3>
             <ul class="networks__list">
                 <li class="networks__lis--item"><a href=""><img src="./image/instagram logo.png" alt="instagram"></a></li>
@@ -331,6 +323,8 @@
                 <li class="networks__lis--item"><a href=""><img src="./image/Mastercard_icon-icons.com_60554.png" alt="mastercard"></a></li>
                 <li class="networks__lis--item"><a href=""><img src="./image/shoppaymentorderbuy-23_icon-icons.com_73884.png" alt="efectivo"></a></li>
            </div>
+        </div>
+       
        </div>
     </footer>
 </body>
