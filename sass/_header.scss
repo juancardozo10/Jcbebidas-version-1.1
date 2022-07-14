@@ -1,0 +1,24 @@
+header{
+    height: auto;  
+
+}
+
+.header__content-logo  img{
+    width: 120px;
+    height: 120px;
+}
+.header__content-navbar ul li {
+    margin: 0 10px;
+    border-bottom: #BF6D24 solid 1px;
+    transition: transform 0.3s;
+}
+.header__content-navbar ul li:active{
+    transform: scale(0.9);
+}
+.header__content-navbar ul li a{
+    color: white;
+    transition: color 0.3s;
+   }
+.encabezado ul li a:hover{
+    color: #f3780c;
+}

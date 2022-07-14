@@ -1,0 +1,157 @@
+.contenedor{
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    
+
+}
+.beer,
+.bubble,
+.small-bubbles,
+.drip{
+    position: absolute;
+}
+.bubble,
+.small-bubbles,
+.drip{
+    background: white;
+}
+.bubble,
+.small-bubbles{
+    border-radius: 100%;
+
+}
+
+.mug{
+    position: relative;
+    width: 70px;
+    height: 120px;
+    background: #eef5f8;
+    border-radius: 8px;
+    
+}
+
+.mug::before,
+.mug::after {
+    position: absolute;
+    content: ''; 
+}
+.mug::before {
+ z-index: -2; 
+ left: 20px;
+    top: 20px;
+    width: 80px;
+    height: 65px;
+    border-radius: 19%;
+    background: #eef5f8;
+}
+.mug::after{
+     z-index: -1; 
+     left: 25px;
+    top: 28px;
+    width: 70px;
+    height: 50px;
+    border-radius: 19%;
+    background-image: linear-gradient(45deg,  black 40%,  #BF6D24 );
+}
+  .beer{
+    top: 15px;
+    left: 10px;
+    width: 50px;
+    height: 100px;
+    background-color: #FFD36d;
+    border-radius: 10px;
+}
+.beer::before,
+.beer::after{
+    position: absolute;
+    content: '';
+    background-color: #f5ae08;
+        border-radius: 100%;
+}
+ 
+.beer::before{
+    animation: 2s up infinite   ;
+    width: 5px;
+    height: 5px;
+    bottom: 10px;
+    left: 10px; 
+    box-shadow: 20px -50px 0 #f5ae08, 30px -20px 0 #f5ae08, 20px -10px 0 #ffe849;
+ }
+ .beer::after    {
+    animation: 2s up infinite   ;
+    width: 5px;
+    height: 5px;
+    bottom: 15px;
+    left: 15px;
+    box-shadow: 20px -30px 0 #ffc849, 30px -50px 0 #f5ae08, 30px -70px 0 #f5ae08;
+    }
+.bubble{
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 15px;
+}
+.bubble::before,
+.bubble::after{
+    position: absolute;
+    content: '';
+    background-color: white;
+    border-radius: 100%; 
+  }
+
+ .bubble::before{
+    width: 40px;
+    height: 40px;
+    left: -30px;
+    top: 2px;
+}
+.bubble::after{
+    width: 30px;
+    height: 30px;
+    left: 35px;
+    top: 5px;
+}
+.small-bubbles{
+    width: 15px;
+    height: 15px;
+    top: -30px;
+    left: 30px;
+
+} 
+.small-bubbles::before,
+.small-bubbles::after{
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    background-color: white;
+}
+.small-bubbles::before{
+    animation: up 3s infinite;
+    width: 10px;
+    height: 10px;
+    top: -6px;
+    left: 30px;
+    box-shadow: 1vmin -10vmin white;
+}
+.small-bubbles::after{
+    animation: up 3s infinite linear;
+    width: 7px;
+    height: 7px;
+    top: -5px;
+    left: -7px;
+    box-shadow: 1vmin -11vmin white;
+}
+.drip{
+    width: 20px;
+    height: 80px;
+    top: 0px;
+    border-radius: 100px;
+    left: -10px;
+    box-shadow: 20px -30px white; 
+ }
+ @keyframes up {
+    0%{transform: translateY(0px);}
+    99%{transform: translateY(-70px);}
+    100%{opacity: 0;}
+}
