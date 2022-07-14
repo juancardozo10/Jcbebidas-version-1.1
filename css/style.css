@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'lato-regular';
+  src: url(./Font/Lato-Regular.ttf); }
+
+@font-face {
+  font-family: 'lato-thin';
+  src: url(./Font/Lato-Thin.ttf); }
+
+@font-face {
+  font-family: 'oswald';
+  src: url(./Font/Oswald-Medium.ttf); }
+
 * {
   margin: 0;
   padding: 0;
@@ -89,7 +101,7 @@ header {
 
 .delivery {
   background-color: #fff;
-  height: 80vh;
+  height: auto;
   display: flex;
   padding: 0px;
   border-radius: 20px;
@@ -97,7 +109,32 @@ header {
 
 .delivery__texto {
   color: #BF6D24;
-  width: 40vw; }
+  width: 30vw;
+  display: grid;
+  grid-template-rows: repeat(3, 200px);
+  justify-items: center;
+  align-items: center; }
+
+.delivery__texto h2 {
+  font-weight: bold;
+  margin-left: 2rem;
+  text-align: start;
+  font-size: 40px;
+  margin-bottom: 20px; }
+
+.delivery__texto p {
+  font-size: 20px;
+  margin-left: 2rem;
+  text-align: left;
+  margin-top: 20px; }
+
+.delivery__texto a {
+  padding: 20px;
+  background-color: #1b1919;
+  border-radius: 10px;
+  color: #f3780c;
+  text-decoration: none;
+  justify-items: center; }
 
 .delivery__img {
   height: 80vh;
@@ -301,3 +338,30 @@ header {
 
 .networks__list {
   font-size: 1rem; }
+
+@media (max-width: 997px) {
+  .delivery__texto {
+    display: block; }
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .header__navbar {
+    display: none; }
+  .delivery {
+    display: block; } }
+
+@media (max-width: 538px) {
+  .product {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .delivery {
+    background-color: #BF6D24; }
+  .delivery__texto {
+    color: white; }
+  .delivery img {
+    display: none; }
+  .whats {
+    display: none; } }

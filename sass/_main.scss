@@ -71,7 +71,7 @@
 }
 .delivery{
     background-color: #fff;
-    height: 80vh;
+    height: auto;
     display: flex;
     padding: 0px;
     border-radius: 20px;
@@ -79,7 +79,32 @@
 }
 .delivery__texto{
     color: #BF6D24;
-    width: 40vw;
+    width: 30vw;
+   display: grid;
+   grid-template-rows: repeat(3, 200px);
+   justify-items: center;
+   align-items: center;
+}
+.delivery__texto h2{
+    font-weight: bold;
+    margin-left: 2rem;
+    text-align: start;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.delivery__texto p{
+    font-size: 20px;
+    margin-left: 2rem;
+    text-align: left;
+    margin-top: 20px;
+}
+.delivery__texto a{
+    padding: 20px;
+    background-color: #1b1919;
+    border-radius: 10px;
+    color: #f3780c;
+    text-decoration: none;
+    justify-items: center;
 }
 .delivery__img{
     height: 80vh;
