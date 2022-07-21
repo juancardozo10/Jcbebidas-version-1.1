@@ -1,12 +1,12 @@
-@font-face {
+ $fontregular: @font-face {
     font-family: 'lato-regular';
     src: url(./Font/Lato-Regular.ttf);
 }
-@font-face {
+$fontlato:@font-face {
     font-family: 'lato-thin';
     src: url(./Font/Lato-Thin.ttf);
 }
-@font-face{
+$fontoswald:@font-face{
     font-family: 'oswald';
     src: url(./Font/Oswald-Medium.ttf);
 }
